@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: black;
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.card{
+  width: 500px;
+  height: 450px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  opacity: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, #121212 0%, rgba(18, 18, 18, 0.75) 75%);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+
+
+p.head{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+p.desc{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 34px;
+  color: #e5e5e5;
+  text-align: center;
+  letter-spacing: 0.75px;
+  padding: 5%;
+}
+
+.btn{
+  background: #307FE2;
+  border-radius: 28px;
+  width: 70%;
+  height: auto;
+  padding: 3%;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  margin: 5%;
+}
+
+p.desc1{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  color: #e5e5e5;
+  text-align: center;
+  letter-spacing: 0.75px;
+  padding: 3%;
+}
+
+
+.resultcard{
+  width: 1000px;
+  height: auto;
+  /* display: flex; */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  opacity: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, #121212 0%, rgba(18, 18, 18, 0.75) 75%);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  padding: 2%;
+  margin-top: 5%;
+}
+
+.imgBx {
+  position: relative;
+  width: 200px;
+  height: 240px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 0px solid rgba(0, 0, 0, 0.25);
+}
+
+.imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+figcaption{
+  display: block;
+  color: #ffffff;
+  margin-top: 95%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 50px;
+  letter-spacing: 1px;
+}
+
+
+input[type=file]::file-selector-button {
+  display: none;
+  border: none;
+  padding: .2em .4em;
+  background-color: #307FE2; 
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+

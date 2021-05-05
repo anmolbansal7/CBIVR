@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <form method="POST" enctype="multipart/form-data">
+            <p class="head">Lost Something?</p>
+            <p class="desc">Input your image below:</p>
+            <input type="file" name="query_img" class="btn">
+            <input type="submit" class="btn">
+            <a href="#" style="text-decoration: none;"><p class="desc1">Looking to upload a lost product?</p></a>
+        </form>
+    </div>
+    <div class="resultcard">
+        <p class="head">We found these</p>
+        <p class="desc">Your query image:</p>
+        <!-- {% if query_path %} -->
+            <figure class="imgBx">
+                <!-- <img src="{{ query_path }}" alt="Query Image"> -->
+                <figcaption>Your input image</figcaption>
+            </figure>
+        <p class="desc">Matching results:</p>
+        <!-- {% for score in scores %} -->
+            <figure class="imgBx">
+                <!-- <img src="{{ score[1] }}" alt="Similar Image"> -->
+                <figcaption>{{ score[0] }}</figcaption>
+            </figure>
+        <!-- {% endfor %} -->
+    </div>
+
+</body>
+
+</html>
