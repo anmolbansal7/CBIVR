@@ -10,16 +10,28 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="card">
-        <form method="POST" enctype="multipart/form-data">
+    <div class="navbar">
+        <ul>
+            <li style="align-self: flex-start;">
+                <h2>Logo</h2>
+            </li>
+            <li style="align-self: flex-end;">
+                <button class="btn" style="width: 150px;" onclick="loginChng()"> Hotel Login </button>
+            </li>
+        </ul>
+    </div>
+    <div class="card" id="search">
+        <form method="POST" enctype="multipart/form-data" onsubmit="return false">
             <p class="head">Lost Something?</p>
             <p class="desc">Input your image below:</p>
-            <input type="file" name="query_img" class="btn">
-            <input type="submit" class="btn">
-            <a href="#" style="text-decoration: none;"><p class="desc1">Looking to upload a lost product?</p></a>
+            <div style="width: 100%;">
+                <input type="file" name="query_img">
+            </div>
+            <input type="submit" class="btn" style="margin-top: 10%;" onclick="showResults()">
+            <a href="login.html" style="text-decoration: none;"><p class="desc1">Looking to upload a lost product?</p></a>
         </form>
     </div>
-    <div class="resultcard">
+    <div class="resultcard" id="results" style="display: none;">
         <p class="head">We found these</p>
         <p class="desc">Your query image:</p>
         <!-- {% if query_path %} -->
@@ -37,5 +49,5 @@
     </div>
 
 </body>
-
+<script src="script.js"></script>
 </html>
