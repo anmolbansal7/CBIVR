@@ -37,10 +37,11 @@ ul li{
   align-content: center;
 }
 
-.card{
+.container{
   width: 500px;
-  height: 450px;
+  height: auto;
   display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
