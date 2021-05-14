@@ -41,12 +41,14 @@
             </figure>
             {% endif %}
         <p class="desc">Matching results:</p>
+<div class="class-img" style="display: inline;">
         {% for score in scores %}
             <figure class="imgBx">
                 <img src="{{ score[1] }}" alt="Similar Image">
                 <figcaption>{{ score[0] }}</figcaption>
-            </figure>
+                </figure>
         {% endfor %}
+    </div>
         </div>
     </div>
 
@@ -58,9 +60,6 @@
             document.getElementById("search").style.display = "none";
             document.getElementById("results").style.display = "block";
         };
-        $("#search").submit(function(e){
-            e.preventDefault();
-        });
     </script>
 </body>
 </html>

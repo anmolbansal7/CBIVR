@@ -9,6 +9,7 @@ body{
     background-image: url("bg.png");
     background-repeat: no-repeat;
     background-size: 100vw auto;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -39,7 +40,7 @@ ul li{
 
 .container{
   width: 500px;
-  height: auto;
+  height: 400px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -236,4 +237,3 @@ input[type="text"]:focus + label {
   color: #999999;
   top: 25%;
 }
-
