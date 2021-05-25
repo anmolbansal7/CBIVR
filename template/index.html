@@ -7,13 +7,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--jQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Document</title>
+    <title>Lost and Found</title>
 </head>
 <body>
     <div class="navbar">
         <ul>
             <li style="align-self: flex-start;">
-                <h2>Logo</h2>
+                <h2>Lost and Found</h2>
             </li>
             <li style="align-self: flex-end;">
                 <button class="btn" style="width: 150px;" onclick="loginChng()"> Upload Lost </button>
@@ -28,7 +28,7 @@
                 <input type="file" name="query_img">
             </div>
             <input type="submit" class="btn" style="margin-top: 10%;" onclick="showResults()">
-            <a href="login.html" style="text-decoration: none;"><p class="desc1">Looking to upload a lost item ?</p></a>
+            <a href="upload.html" style="text-decoration: none;"><p class="desc1">Looking to upload a lost item ?</p></a>
         </form>
     </div>
     <div class="resultcard" id="results" style="display: none;">
@@ -45,7 +45,7 @@
         {% for score in scores %}
             <figure class="imgBx">
                 <img src="{{ score[1] }}" alt="Similar Image">
-                <figcaption>{{ score[0] }}</figcaption>
+                <figcaption>{{ score[0] }}</figcaption> <!--File Name Enter instead of score-->
                 </figure>
         {% endfor %}
     </div>
@@ -54,7 +54,7 @@
 
     <script>
         function loginChng(){
-            window.location.href="login.html";
+            window.location.href="upload.html";
         };
         function showResults(){
             document.getElementById("search").style.display = "none";
