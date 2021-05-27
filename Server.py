@@ -8,16 +8,16 @@ from pathlib import Path
 app = Flask(__name__)
 
 df = DeepFeatures()
-features = []
-img_paths = []
-for feature_path in Path("./static/feature").glob("*.npy"):
-    features.append(np.load(feature_path))
-    img_paths.append(Path("./static/image") / (feature_path.stem + ".jpg"))
-features = np.array(features)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
+        features = []
+        img_paths = []
+        for feature_path in Path("./static/feature").glob("*.npy"):
+            features.append(np.load(feature_path))
+            img_paths.append(Path("./static/image") / (feature_path.stem + ".jpg"))
+        features = np.array(features)
         file = request.files['query_img']
         img = Image.open(file.stream)
         uploaded_img_path = "static/uploaded/" + datetime.now().isoformat().replace(":", ".") + "_" + file.filename
@@ -46,7 +46,6 @@ def upload():
         feature = df.extract(img)
         fpath = Path("./static/feature")/(name + ".npy")
         np.save(fpath, feature)
-        features.append(feature)
         
         return render_template('upload.html')
     else:
