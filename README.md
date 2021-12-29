@@ -1,6 +1,9 @@
 # Lost and Found Image Search
 #### A web application that keeps track of missing belongings in a hotel. You lost something? Look here.
 
+#### [Project Report.pdf](https://github.com/anmolbansal7/Lost-and-Found/files/7789217/CBIVR.Final.pdf)
+
+
 ## Brief Introduction 📍
 Losing possession in hotel or resort premises is a serious concern for many. The management also has to take care of these items and ensure that it is retrieved by their actual owner only. Our project aims to solve this hassle and pressure a person deals with to retrieve a lost object. The object can be lost anywhere, whether it be a hotel, hospital, restaurant, school, etc. For this project, our application focuses on the retrieval of lost objects from hotels premises. Our main motive is for better management of these lost items and to ease the process of finding a lost item.
 
