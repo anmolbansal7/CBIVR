@@ -2,6 +2,7 @@
 #### A web application that keeps track of missing belongings in a hotel. You lost something? Look here.
 
 #### [Project Report.pdf](https://github.com/anmolbansal7/Lost-and-Found/files/7789217/CBIVR.Final.pdf)
+#### [Figma Design Link](https://www.figma.com/file/rWTOaHtSFfqcCpFoKEYk6V/College-Projects?node-id=0%3A1)
 
 
 ## Brief Introduction 📍
